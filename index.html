@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <title>Limbomass App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="decoration"></div>
+            <div class="container">
+                <div class="content">
+                    <div class="init"><br><br>
+                        <div class="input-group">
+                            <input type="number" id="mid_inp_mass" step="any" inputmode="decimal" min="0" onkeydown="filterExponential(event)" required>
+                            <label for="mid_inp_mass">Berat Badan</label>
+                            <p>kg</p>
+                        </div><br>
+                        <div class="input-group">
+                            <input type="number" id="mid_inp_height" step="1" inputmode="numeric" min="1" onkeydown="filterDecimal(event)" required>
+                            <label for="mid_inp_mass">Tinggi Badan</label>
+                            <p>cm</p>
+                        </div>
+                        <h6>Catatan penting:<br>
+                            BMI hanya melihat berat dan tinggi, jadi tidak bisa membedakan apakah berat badan berasal dari otot atau lemak. Atlet berotot misalnya bisa punya BMI tinggi tapi tetap sehat. BMI cukup berguna, tetapi tidak terlalu akurat jika digunakan sendirian. BMI lebih cocok sebagai alat skrining, bukan alat diagnosis.<br>
+                            BMI merupakan indikator awal berdasarkan tinggi dan berat badan. Hasil BMI tidak memperhitungkan komposisi tubuh seperti massa otot, lemak, dan kepadatan tulang. Untuk penilaian kondisi tubuh yang lebih akurat, gunakan BMI bersama indikator lain seperti lingkar pinggang atau persentase lemak tubuh.</h6>
+                        <div class="btn-input button">Hitung</div>
+                    </div>
+                    <div class="init"><br><br>
+                        <div class="input-group">
+                            <input type="number" id="mid_inp_mass" step="any" inputmode="decimal" min="1" onkeydown="filterExponential(event)" required>
+                            <label for="mid_inp_mass">Berat Badan</label>
+                            <p>kg</p>
+                        </div><br>
+                        <div class="input-group">
+                            <input type="number" id="mid_inp_height" step="1" inputmode="numeric" min="1" onkeydown="filterDecimal(event)" required>
+                            <label for="mid_inp_height">Tinggi Badan</label>
+                            <p>cm</p>
+                        </div><br>
+                        <div class="input-group">
+                            <input type="number" id="mid_inp_age" step="1" inputmode="numeric" min="1" onkeydown="filterDecimal(event)" required>
+                            <label for="mid_inp_age">Umur</label>
+                            <p>th</p>
+                        </div>
+                        <div class="input-group-radio">
+                            <div class="radio-group">
+                                <input type="radio" id="mid_radio_0" name="radioact" value="0" checked>
+                                <label for="mid_radio_0">Laki - Laki</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="mid_radio_1" name="radioact" value="1">
+                                <label for="mid_radio_1">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="dropdown-group" id="mid_dropdown_act">
+                            <div class="dropdown-selected">Pilih Kategori Kegiatan
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-item" data-value="1.2">Aktivitas sangat sedikit bergerak<br><span>Gerakan sangat ringan, kerja kantoran lebih banyak duduk, kurang dari 5.000 langkah harian.</span></div>
+                                <div class="dropdown-item" data-value="1.375">Aktivitas ringan<br><span>Gerakan ringan, olahraga 1x - 3x seminggu, langkah kaki 5.000 - 7.500 per hari.</span></div>
+                                <div class="dropdown-item" data-value="1.55">Aktivitas sedang<br><span>Banyak gerak, olahraga 3x - 5x seminggu, langkah kaki 7.500 - 10.000 per hari.</span></div>
+                                <div class="dropdown-item" data-value="1.725">Aktivitas tinggi<br><span>Selalu aktif, kerja fisik, latihan intens, 10.000 - 15.000 langkah per hari.</span></div>
+                                <div class="dropdown-item" data-value="1.9">Aktivitas berat<br><span>Kerja fisik berat, lebih intens latihan, atlet profesional, 15.000 - 20.000 langkah per hari.</span></div>
+                            </div>
+                        </div>
+                        <div class="btn-input button">Hitung</div>
+                    </div>
+                </div>
+                <div id="mid_slider" class="slider">
+                    <h1 id="mid_slider_head"></h1>
+                    <p id="mid_slider_content"></p><br>
+                    <p id="mid_slider_result"></p>
+                    <div id="mid_btn_slide" class="btn-slide button"></div>
+                </div>
+            </div>
+            <div id="mid_more_group" class="popup">
+                <div class="more-group">
+                    <div class="more-header">
+                        <h1></h1>
+                        <h1></h1>
+                    </div>
+                    <p id="mid_more_content" class="more-text"></p>
+                    <button class="more-button button" onclick="closepopup()">Tutup</button>
+                </div>
+            </div>
+            <div class="blocker">Halaman web ini tidak support versi mobile.<br>Aktifkan mode dekstop pada perangkat mobile anda jika ingin mengakses website ini pada mobile.</div>
+        </main>
+        <script src="core.js"></script>
+    </body>
+</html>
