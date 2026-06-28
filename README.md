@@ -10,7 +10,7 @@ professional medical advice.
 Always consult a healthcare professional
 for medical diagnosis or treatment.
 
-# BMI Calculato.
+# BMI Calculator
 Simple BMI Calculator built with HTML, CSS, and JavaScript.
 
 ## Features
@@ -18,3 +18,6 @@ Simple BMI Calculator built with HTML, CSS, and JavaScript.
 - BMR Calculation
 - TDEE Calculation
 - Responsive
+
+## Demo
+https://akmal-ls-studio.github.io/limbomass-app/
