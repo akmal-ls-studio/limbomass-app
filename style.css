@@ -615,9 +615,9 @@ article h6 {
 
 @media screen and (max-width: 480px) {
     .navbar {
-        /* bottom: -2rem; */
+        bottom: -2rem;
         font-size: .8rem;
-        /* scale: 0.65; */
+        scale: 0.65;
     }
 
     .navbar ul .nav-item {
@@ -640,7 +640,7 @@ article h6 {
     }
 
     main {
-        height: 85dvh;
+        height: calc(100% - 8rem);
     }
 
     .formula {
