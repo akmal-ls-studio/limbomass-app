@@ -17,7 +17,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     overflow: hidden;
     display: flex;
@@ -170,9 +170,9 @@ body {
 }
 
 main {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: calc(100vh - 8rem);
+    height: calc(100dvh - 8rem);
     top: 0;
     padding: 16px;
     background:
@@ -615,7 +615,7 @@ article h6 {
 
 @media screen and (max-width: 480px) {
     .navbar {
-        /* bottom: -2rem; */
+        bottom: -2rem;
         font-size: .8rem;
         scale: 0.65;
     }
