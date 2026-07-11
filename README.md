@@ -10,8 +10,8 @@ professional medical advice.
 Always consult a healthcare professional
 for medical diagnosis or treatment.
 
-# BMI Calculator
-Simple BMI Calculator built with HTML, CSS, and JavaScript.
+# BMI, BMR, and TDEE Calculator
+Simple BMI, BMR, and TDEE Calculation built with HTML, CSS, and JavaScript.
 
 ## Features
 - BMI Calculation
