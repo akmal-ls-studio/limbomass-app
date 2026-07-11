@@ -615,7 +615,7 @@ article h6 {
 
 @media screen and (max-width: 480px) {
     .navbar {
-        bottom: -2rem;
+        /* bottom: -2rem; */
         font-size: .8rem;
         scale: 0.65;
     }
