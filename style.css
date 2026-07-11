@@ -170,7 +170,7 @@ body {
 }
 
 main {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: calc(100dvh - 8rem);
     top: 0;
