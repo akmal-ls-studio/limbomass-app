@@ -640,7 +640,7 @@ article h6 {
     }
 
     main {
-        height: calc(100dvh - 16rem);
+        height: calc(100% - 8rem);
     }
 
     .formula {
